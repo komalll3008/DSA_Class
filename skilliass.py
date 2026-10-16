@@ -25,3 +25,15 @@ def findDivisors(n):
     return divisors
 
 #lcm of 2 nos
+def findLcm(n1, n2):
+    for i in range(max(n1,n2),n1*n2+1):
+        if i%n1==0 and i%n2==0:
+            return i
+
+
+#gcd of 2 numbers
+
+def findLcm(n1, n2):
+    for i in range(max(n1,n2),n1*n2+1):
+        if i%n1==0 and i%n2==0:
+            return i
