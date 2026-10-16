@@ -37,3 +37,17 @@ def findLcm(n1, n2):
     for i in range(max(n1,n2),n1*n2+1):
         if i%n1==0 and i%n2==0:
             return i
+
+#count of prime numbers till N
+
+def countPrimes(n):
+    count=0
+    for num in range(2,n+1):
+        prime=True
+        for i in range(2,num):
+            if num%i==0:
+                prime=False
+                break
+        if prime:
+            count+=1
+    return count
