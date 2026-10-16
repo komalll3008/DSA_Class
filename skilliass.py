@@ -51,3 +51,39 @@ def countPrimes(n):
         if prime:
             count+=1
     return count
+
+
+#check for prime numbers
+
+def countPrimes(n):
+    count=0
+    for num in range(2,n+1):
+        prime=True
+        for i in range(2,num):
+            if num%i==0:
+                prime=False
+                break
+        if prime:
+            count+=1
+    return count
+
+
+#check for perfect no
+
+def isPerfectNumber(n):
+    total=0
+    for i in range(1,n):
+        if n%i==0:
+            total +=i
+    return total==n
+
+#count odd digits
+
+def countOddDigits(n):
+    count=0
+    while n>0:
+        digit=n%10
+        if digit%2!=0:
+            count+=1
+        n=n//10
+    return count
